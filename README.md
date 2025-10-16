@@ -55,3 +55,20 @@ php artisan app:fetch incomes (дата от) (дата до) --page 1 --limit 1
 - Database user: sql10803268
 - Database password: qE8JPpDGAh
 - Port number: 3306
+
+## Структура проекта
+
+project-root/
+├─ 📂 app/
+│  └─ 📂 Console/
+│     └─ 📂 Commands/
+│          └─ FetchCommand.php #Команда выборки данных из API -> использует сервис ApiService.php
+│  └─ 📂 Models/
+│       └─ Incomes.php
+│       └─ Orders.php
+│       └─ Sales.php
+│       └─ Stocks.php
+│  └─ 📂 Services/
+│       └─ ApiService.php #Сервис который собирает запрос к API
+└── .env #Тут указывается URL и ключ к API
+
