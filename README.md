@@ -20,8 +20,7 @@
 
 ## Выгрузка происходит через консольную команду app:fetch
 
-Дата указывается в формате Y-m-d
-Флаги --page и --limit не обязательны, но можно указать нужную страницу и лимит
+Дата указывается в формате Y-m-d  Флаги --page и --limit не обязательны, но можно указать нужную страницу и лимит
 
 ### Выгрузка из продаж:
 
@@ -46,3 +45,13 @@ php artisan app:fetch stocks (текущая дата) --page 1 --limit 100
 ```
 php artisan app:fetch incomes (дата от) (дата до) --page 1 --limit 100
 ```
+
+## Демо БД
+
+В ней только необходимые таблицы: sales, orders, stocks, incomes
+
+- Host: sql10.freesqldatabase.com
+- Database name: sql10803268
+- Database user: sql10803268
+- Database password: qE8JPpDGAh
+- Port number: 3306
